@@ -7,7 +7,6 @@ export const Container = styled.div`
     padding-bottom: 40px;
 
 `
-
 export const Copyright = styled.span`
     color: #767B7D;
     font-size: 14px;
