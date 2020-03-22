@@ -11,7 +11,7 @@ export default function TopBar() {
 			<Logo src={logo} />
 			<TabRightBox>
 				<Link>Sobre a Empresa</Link>
-				<Link href="/contact">Contato</Link>
+				<Link href="/#/contact">Contato</Link>
 				<ButtonLogin>
 					<Icon src={icUser}/>
 					Acesse sua conta
