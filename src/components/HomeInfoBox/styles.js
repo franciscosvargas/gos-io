@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 240px;
-    height: 242px;
     background: #303436;
     box-shadow: 0px 3px 6px #00000029;
     margin-right: 40px;
-    padding: 35px 20px 0px 20px;
+    padding: 35px 20px 20px 20px;
 
 `
 export const TitleBox = styled.div`
