@@ -38,3 +38,9 @@ textarea ::placeholder,
 :-ms-input-placeholder {
  color: #B3B4B4;
 }
+
+.inputLogin {
+  width: 250px !important;
+  margin-left: 20px;
+  margin-top: 30px;
+}

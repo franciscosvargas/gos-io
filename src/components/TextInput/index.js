@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, Required } from './styles';
 
-const TextInput = ({placeholder, type, style, required}) => (
+const TextInput = ({placeholder, type, style, required, className}) => (
 
     <div style={{display: 'flex', flexDirection: 'column'}}>
         <Container 
@@ -10,6 +10,7 @@ const TextInput = ({placeholder, type, style, required}) => (
             style={style}
             type={type}
             placeholder={placeholder}
+            className={className}
         />
 
         { required ? (
