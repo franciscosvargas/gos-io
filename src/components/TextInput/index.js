@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl'
 
 import { Container, Required } from './styles';
 
@@ -14,7 +15,9 @@ const TextInput = ({placeholder, type, style, required, className}) => (
         />
 
         { required ? (
-            <Required>*Requerido</Required>
+            <Required>
+				<FormattedMessage id="spanRequired"/>
+			</Required>
         ) : null}
 
     </div>

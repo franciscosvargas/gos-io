@@ -1,29 +1,41 @@
 import React from 'react';
+import { FormattedMessage, injectIntl } from 'react-intl'
 
-import { Container, Title, ProductsBox } from './styles';
+import { Container, Title, ProductsBox } from './styles'
 
-
-import TopBar from "../../components/TopBar";
-import Product from "../../components/HomeInfoBox";
-import Footer from "../../components/Footer";
+import TopBar from "../../components/TopBar"
+import Product from "../../components/HomeInfoBox"
+import Footer from "../../components/Footer"
 
 import icStore from '../../assets/ic_store.svg'
 import icIOT from '../../assets/ic_iot.svg'
 import icAI from '../../assets/ic_ai.svg'
 
-const Home = () => (
+const Home = injectIntl(({intl}) => {
 
-    <Container>
-        <TopBar/>
-        <Title>Uma Startup Multiespecializada {<br/>} em Suporte Técnico B2B.</Title>
-        <ProductsBox>
-            <Product icon={icStore} name="MarketPlace" description="Foco em desenvolvimento de sistemas e-commerce, design e publicidade."/>
-            <Product icon={icIOT} name="IoT Automation" description="Divisão técnica focada em análise e desenvolvimento de processos automáticos ou automatizáveis e internet das coisas."/>
-            <Product icon={icAI} name="AI" description="Equipe responsável por desenvolver sistemas inteligentes de alta complexidade técnica e precisão em tempo real."/>
-        </ProductsBox>
-        <Footer/>
-    </Container>
-   
-);
+	const descriptions = {
+		marketplace: intl.formatMessage({id: 'marketplaceDescription'}),
+		automation: intl.formatMessage({id: 'automationDescription'}),
+		ai: intl.formatMessage({id: 'aiDescription'})
+	}
+
+	return (
+		<Container>
+			<TopBar/>
+			<Title> 
+				<FormattedMessage id="homeTitle1"/>
+				{<br/>} 
+				<FormattedMessage id="homeTitle2"/>
+			</Title>
+			<ProductsBox>
+				<Product icon={icStore} name="MarketPlace" description={descriptions.marketplace}/>
+				<Product icon={icIOT} name="IoT Automation" description={descriptions.automation}/>
+				<Product icon={icAI} name="AI" description={descriptions.ai} />
+			</ProductsBox>
+			<Footer/>
+		</Container>
+   )
+})
+
 
 export default Home;

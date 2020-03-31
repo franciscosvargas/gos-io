@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 
 import { Container, Logo, TabRightBox, Link, ButtonLogin, Icon } from './styles.js'
 
@@ -10,11 +11,15 @@ export default function TopBar() {
 		<Container>
 			<Logo src={logo} />
 			<TabRightBox>
-				<Link>Sobre a Empresa</Link>
-				<Link href="/#/contact">Contato</Link>
+				<Link>
+					<FormattedMessage id="linkAbout" />
+				</Link>
+				<Link href="/#/contact">
+					<FormattedMessage id="linkContact" />
+				</Link>
 				<ButtonLogin href="/#/login">
 					<Icon src={icUser}/>
-					Acesse sua conta
+					<FormattedMessage id="linkLogin" />
 				</ButtonLogin>
 			</TabRightBox>
 			

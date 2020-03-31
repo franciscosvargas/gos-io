@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { injectIntl } from 'react-intl'
 
 import { Container, InputGroup, Button, IconButton } from './styles';
 
@@ -6,29 +7,39 @@ import Topbar from '../../components/TopBar';
 import TextInput from '../../components/TextInput';
 import Footer from '../../components/Footer';
 
+const Login = injectIntl(({intl}) => {
 
-export default class Login extends Component {
-  render() {
-    return (
-      <Container>
+	const texts = {
+		plholderCountry: intl.formatMessage({id: 'inputCountry'}),
+		plholderCity: intl.formatMessage({id: 'inputCity'}),
+		plholderCompany: intl.formatMessage({id: 'inputCompany'}),
+		plholderState: intl.formatMessage({id: 'inputUF'}),
+		plholderPassword: intl.formatMessage({id: 'inputPassword'}),
+		buttonAccess: intl.formatMessage({id: 'buttonAccess'}),
+		buttonDownloadApp: intl.formatMessage({id: 'buttonDownloadApp'})
+	}
+
+	return(
+		<Container>
         <Topbar/>
 
         <InputGroup>
           <TextInput className="inputLogin" type="text" placeholder="CPF"/>
-          <TextInput className="inputLogin" type="text" placeholder="País"/>
-          <TextInput className="inputLogin" type="text" placeholder="Cidade"/>
-          <TextInput className="inputLogin" type="text" placeholder="Empresa (nickname)"/>
-          <TextInput className="inputLogin" type="text" placeholder="Estado"/>
-          <TextInput className="inputLogin" type="text" placeholder="Senha (mínimo 4 números)"/>
+          <TextInput className="inputLogin" type="text" placeholder={texts.plholderCountry}/>
+          <TextInput className="inputLogin" type="text" placeholder={texts.plholderCity}/>
+          <TextInput className="inputLogin" type="text" placeholder={texts.plholderCompany}/>
+          <TextInput className="inputLogin" type="text" placeholder={texts.plholderState}/>
+          <TextInput className="inputLogin" type="text" placeholder={texts.plholderPassword}/>
 
-          <Button>ACESSAR</Button>
+          <Button>{texts.buttonAccess}</Button>
 
-          <IconButton>BAIXAR APLICATIVO</IconButton>
+          <IconButton>{texts.buttonDownloadApp}</IconButton>
         </InputGroup>
 
         <Footer/>
       </Container>
-    );
-  }
-}
+	)
 
+});
+
+export default Login;
