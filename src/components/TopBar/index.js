@@ -11,7 +11,7 @@ export default function TopBar() {
 		<Container>
 			<Logo src={logo} />
 			<TabRightBox>
-				<Link>
+				<Link href="/#/about">
 					<FormattedMessage id="linkAbout" />
 				</Link>
 				<Link href="/#/contact">

@@ -21,22 +21,22 @@ const Login = injectIntl(({intl}) => {
 
 	return(
 		<Container>
-        <Topbar/>
+			<Topbar/>
 
-        <InputGroup>
-          <TextInput className="inputLogin" type="text" placeholder="CPF"/>
-          <TextInput className="inputLogin" type="text" placeholder={texts.plholderCountry}/>
-          <TextInput className="inputLogin" type="text" placeholder={texts.plholderCity}/>
-          <TextInput className="inputLogin" type="text" placeholder={texts.plholderCompany}/>
-          <TextInput className="inputLogin" type="text" placeholder={texts.plholderState}/>
-          <TextInput className="inputLogin" type="text" placeholder={texts.plholderPassword}/>
+			<InputGroup>
+				<TextInput className="inputLogin" type="text" placeholder="CPF"/>
+				<TextInput className="inputLogin" type="text" placeholder={texts.plholderCountry}/>
+				<TextInput className="inputLogin" type="text" placeholder={texts.plholderCity}/>
+				<TextInput className="inputLogin" type="text" placeholder={texts.plholderCompany}/>
+				<TextInput className="inputLogin" type="text" placeholder={texts.plholderState}/>
+				<TextInput className="inputLogin" type="text" placeholder={texts.plholderPassword}/>
 
-          <Button>{texts.buttonAccess}</Button>
+				<Button>{texts.buttonAccess}</Button>
 
-          <IconButton>{texts.buttonDownloadApp}</IconButton>
-        </InputGroup>
+				<IconButton>{texts.buttonDownloadApp}</IconButton>
+			</InputGroup>
 
-        <Footer/>
+			<Footer/>
       </Container>
 	)
 

@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FormattedMessage } from 'react-intl'
 
-import { Container, Copyright, TabRightBox, Link, Icon, LanguagesList, Language } from './styles';
+import { Container, Copyright, TabRightBox, Link } from './styles';
 
-import icGlobal from '../../assets/ic_global.svg';
+//import icGlobal from '../../assets/ic_global.svg';
 
 const Footer = () => {
-    const [menu, setMenu] = useState(false)
     return (
         <Container>
             <Copyright>
