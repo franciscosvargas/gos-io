@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: column;
+	flex-direction: column;
+	width: 100%;
 `
 
 export const Title = styled.span`
@@ -14,5 +15,8 @@ export const Title = styled.span`
 
 export const ProductsBox = styled.div`
     margin-top: 50px;
-    display: flex;
+	display: flex;
+	flex-wrap: wrap;
+
+	
 `

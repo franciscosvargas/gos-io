@@ -4,8 +4,15 @@ export const Container = styled.div`
     width: 240px;
     background: #303436;
     box-shadow: 0px 3px 6px #00000029;
-    margin-right: 40px;
-    padding: 35px 20px 20px 20px;
+	margin-right: 40px;
+	padding: 35px 20px 20px 20px;
+	flex-shrink: 0; 
+	margin-top: 30px;
+
+	@media (max-width: 1160px) {
+		flex-grow: 1;
+		
+	}
 
 `
 export const TitleBox = styled.div`

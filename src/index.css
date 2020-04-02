@@ -18,7 +18,17 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 50px;
+
+ 
 }
+@media (max-width: 800px) {
+	body {
+		padding-left: 30px;
+  		padding-right: 30px;
+	}
+}
+
+
 
 textarea {
     font-family: 'Nunito Sans', sans-serif;

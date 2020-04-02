@@ -12,10 +12,15 @@ export const Logo = styled.img`
 `
 
 export const TabRightBox = styled.div`
+	display: flex;
     margin-left: auto;
     height: 100%;
-    display: flex;
-    justify-content: center
+	justify-content: center;
+
+	@media (max-width: 650px) {
+		display: none;
+	}
+
 `
 
 export const Link = styled.a`
