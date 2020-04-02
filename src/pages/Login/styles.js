@@ -7,12 +7,24 @@ export const Container = styled.div`
 
 `
 export const InputGroup = styled.div`
-    width: 540px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 550px;
+	margin-left: auto;
+	margin-right: auto;
     margin-top: 100px;
     display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	@media (max-width: 1250px) {
+		width: 700px;
+	}
+	
+
+	@media (max-width: 570px) {
+		width: 100% !important;
+		margin-left: 0 !important;
+    	margin-right: 0 !important;
+		
+	}
 `
 
 export const Button = styled.button`
@@ -22,8 +34,14 @@ export const Button = styled.button`
     background: #21AFE9;
     color: #fff;
     margin-top: 42px;
-    margin-bottom: 50px;
-    font-size: 16px;
+    
+	font-size: 16px;
+	
+	@media (max-width: 570px) {
+		margin-bottom: 0px;
+		width: 100%;
+		
+	}
 `
 
 export const IconButton = styled.a`
@@ -33,5 +51,14 @@ export const IconButton = styled.a`
     height: 22px;
     margin-top: 42px;
     font-size: 16px;
-    border: 1px solid #21AFE9;
+	border: 1px solid #21AFE9;
+	display: flex;
+	
+	@media (max-width: 570px) {
+		margin-top: 10px;
+		margin-bottom: 0px;
+		width: 100%;
+		justify-content: center;
+		
+	}
 `

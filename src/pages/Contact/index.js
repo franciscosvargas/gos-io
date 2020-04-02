@@ -30,10 +30,10 @@ const Contact = injectIntl(({intl}) => {
 			<Content>
 				<Side>
 					<Title>{texts.title}</Title>
-					<TextInput style={{marginTop: 70}}type="text" placeholder={texts.plholderName} required/>
+					<TextInput className="first-input" type="text" placeholder={texts.plholderName} required/>
 					<InputGroup>
-						<TextInput style={{width: 240}} type="text" placeholder={texts.plholderEmail} required/>
-						<TextInput style={{width: 240}} type="text" placeholder={texts.plholderPhone} />    
+						<TextInput type="text" placeholder={texts.plholderEmail} required/>
+						<TextInput type="text" placeholder={texts.plholderPhone} />    
 					</InputGroup>
 					<textarea required placeholder={texts.plholderMessage}/>
 					<Required>{texts.spanRequired}</Required>
@@ -53,7 +53,7 @@ const Contact = injectIntl(({intl}) => {
 					</IconButton>
 
 					<Title style={{marginTop: 50}}>{texts.spanAddress}</Title>
-					<Span style={{marginTop: 20, width: 194}}>Praça Prefeito Antonio Carlos Barbosa - Nº 15 São Pedro da União 37.855.000 {<br/>}00.000.000/0000-00</Span>
+					<Span className="span-address">Praça Prefeito Antonio Carlos Barbosa - Nº 15 São Pedro da União 37.855.000 {<br/>}00.000.000/0000-00</Span>
 
 				</Side>
 			</Content>

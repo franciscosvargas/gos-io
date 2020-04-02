@@ -5,7 +5,7 @@ import { Container, Required } from './styles';
 
 const TextInput = ({placeholder, type, style, required, className}) => (
 
-    <div style={{display: 'flex', flexDirection: 'column'}}>
+    <div className="div-input">
         <Container 
             required={required} 
             style={style}

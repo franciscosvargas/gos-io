@@ -5,8 +5,11 @@ export const Container = styled.input`
     border-bottom: 1px solid #B3B4B4 !important;
     background: none;
     border: none;
-    color: #B3B4B4;
-    font-size: 16px;
+	color: #B3B4B4;
+	display:flex;
+	flex-direction: column;
+	font-size: 16px;
+	min-width: 240px !important;
     ::placeholder,
     ::-webkit-input-placeholder {
         color: #B3B4B4;
@@ -16,10 +19,15 @@ export const Container = styled.input`
 	}
 	
 	
-	@media (max-width: 570px) {
-		width: 295px !important;
+	@media (max-width: 1250px) {
+		width: 100% !important;
 		flex-grow: 1 !important;
-		margin-top: 10px;
+		margin-top: 25px;
+	}
+
+	@media (min-width: 600px) {
+		flex-grow: 1 !important;
+		margin-top: 25px;
 	}
 
 

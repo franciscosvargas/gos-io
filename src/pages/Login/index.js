@@ -31,6 +31,8 @@ const Login = injectIntl(({intl}) => {
 				<TextInput className="inputLogin" type="text" placeholder={texts.plholderState}/>
 				<TextInput className="inputLogin" type="text" placeholder={texts.plholderPassword}/>
 
+
+				
 				<Button>{texts.buttonAccess}</Button>
 
 				<IconButton>{texts.buttonDownloadApp}</IconButton>

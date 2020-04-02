@@ -19,17 +19,19 @@ export const Content = styled.div`
 	flex-direction: row;
 
 	@media (max-width: 570px) {
-		margin-top: 70px;
+		margin-top: 0px;
 		flex-wrap: wrap !important;
 		
 	}
 `
 
 export const InputGroup = styled.div`
+	width: 100% !important;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15px !important;
-    justify-content: space-between;
+	margin-top: 15px !important;
+	justify-content: space-between;
+	
 `
 
 export const Side = styled.div`
@@ -60,12 +62,17 @@ export const Button = styled.button`
     background: #21AFE9;
     color: #fff;
     margin-top: 42px;
-    font-size: 16px;
+	font-size: 16px;
+	
+	@media (max-width: 570px) {
+		width: 98%;
+	}
 `
 
 export const Span = styled.span`
     color: #DBDEDF;
-    font-size: 18px;
+	font-size: 18px;
+	
 `
 
 export const IconButton = styled.a`
@@ -75,5 +82,7 @@ export const IconButton = styled.a`
     width: 170px;
     padding: 10px;
     color: #21AFE9;
-    border: 1px solid #21AFE9;
+	border: 1px solid #21AFE9;
+	
+
 `
