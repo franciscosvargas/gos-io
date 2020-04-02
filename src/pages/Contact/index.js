@@ -40,7 +40,7 @@ const Contact = injectIntl(({intl}) => {
 					<Button>{texts.buttonSend}</Button>
 				</Side>
 
-				<Side style={{marginLeft: '100px'}}>
+				<Side className="rightSide" style={{marginLeft: '100px'}}>
 					<Title>E-mail</Title>
 					<Span style={{marginTop: 20}}>suporte@gos-io.tech</Span>
 					<IconButton>

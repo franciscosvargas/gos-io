@@ -13,7 +13,16 @@ export const Container = styled.input`
     }
     :-ms-input-placeholder {
      color: #B3B4B4;
-    }
+	}
+	
+	
+	@media (max-width: 570px) {
+		width: 295px !important;
+		flex-grow: 1 !important;
+		margin-top: 10px;
+	}
+
+
   
 `;
 

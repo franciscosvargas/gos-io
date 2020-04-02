@@ -15,7 +15,14 @@ export const Title = styled.span`
 
 export const Content = styled.div`
     display: flex;
-    margin-top: 130px;
+	margin-top: 130px;
+	flex-direction: row;
+
+	@media (max-width: 570px) {
+		margin-top: 70px;
+		flex-wrap: wrap !important;
+		
+	}
 `
 
 export const InputGroup = styled.div`
@@ -26,9 +33,19 @@ export const InputGroup = styled.div`
 `
 
 export const Side = styled.div`
-    width: 50%;
+    width: 48%;
     display: flex;
-    flex-direction: column;
+	flex-direction: column;
+	flex-grow: 1;
+
+
+	@media (max-width: 570px) {
+		margin-top: 50px;
+		flex-grow: 1;
+		width: 100%;
+		margin-left: 0 !important;
+		
+	}
 `
 
 export const Required = styled.span`

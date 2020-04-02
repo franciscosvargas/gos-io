@@ -41,6 +41,10 @@ textarea {
     margin-top: 10px;
     
 }
+.contactRight {
+	margin-right: 100px;
+}
+
 textarea ::placeholder,
 ::-webkit-input-placeholder {
     color: #B3B4B4;
@@ -59,4 +63,9 @@ textarea ::placeholder,
 .selected {
   background: #DBDEDF;
   opacity: 1 !important;
+}
+
+@media (max-width: 570px) {
+	
+	
 }
