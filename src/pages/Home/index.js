@@ -6,6 +6,7 @@ import { Container, Title, ProductsBox } from './styles'
 import TopBar from "../../components/TopBar"
 import Product from "../../components/HomeInfoBox"
 import Footer from "../../components/Footer"
+import SideMenu from "../../components/SideMenu"
 
 import icStore from '../../assets/ic_store.svg'
 import icIOT from '../../assets/ic_iot.svg'
@@ -21,6 +22,7 @@ const Home = injectIntl(({intl}) => {
 
 	return (
 		<Container>
+			<SideMenu/>
 			<TopBar/>
 			<Title> 
 				<FormattedMessage id="homeTitle1"/>
