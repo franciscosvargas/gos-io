@@ -4,7 +4,11 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     margin-top: 90px;
-    padding-bottom: 40px;
+	padding-bottom: 40px;
+	
+	@media (max-width: 650px) {
+		display: none;
+	}
 
 `
 export const Copyright = styled.span`

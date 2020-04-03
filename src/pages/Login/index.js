@@ -6,6 +6,7 @@ import { Container, InputGroup, Button, IconButton } from './styles';
 import Topbar from '../../components/TopBar';
 import TextInput from '../../components/TextInput';
 import Footer from '../../components/Footer';
+import SideMenu from "../../components/SideMenu"
 
 const Login = injectIntl(({intl}) => {
 
@@ -21,7 +22,9 @@ const Login = injectIntl(({intl}) => {
 
 	return(
 		<Container>
-			<Topbar/>
+			<Topbar />
+
+			<SideMenu />
 
 			<InputGroup>
 				<TextInput className="inputLogin" type="text" placeholder="CPF"/>

@@ -5,6 +5,7 @@ import { Container, Content, Side, Title, InputGroup, Required, Button, Span, Ic
 
 import Topbar from '../../components/TopBar'
 import Footer from '../../components/Footer'
+import SideMenu from "../../components/SideMenu"
 
 import TextInput from '../../components/TextInput'
 
@@ -27,6 +28,7 @@ const Contact = injectIntl(({intl}) => {
 	return (
 		<Container>
 			<Topbar/>
+			<SideMenu />
 			<Content>
 				<Side>
 					<Title>{texts.title}</Title>

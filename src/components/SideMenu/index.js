@@ -1,36 +1,60 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl'
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { FormattedMessage } from 'react-intl';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
 
 import { Container, Icon, ButtonLogin, IconButton, Link, Bottom } from './styles';
+import * as actions from '../../store/actions/topbar';
 
 import Arrow from '../../assets/ic_arrow.svg'
 import icUser from '../../assets/ic_user.png'
+import TopBar from '../TopBar';
 
 
+const SideMenu = ({menuStatus, menu}) => (
 
-const SideMenu = () => (
-	<Container>
-		<Icon src={Arrow}/>
+	<SwitchTransition>
+				
+		<CSSTransition key={menu ? "Goodbye, world!" : "Hello, world!"} in={menu} timeout={200} classNames="my-node" >
+		
+			{menu ? (
+				<Container>
+					<Icon onClick={() => menuStatus()} src={Arrow}/>
 
-		<ButtonLogin href="/#/login">
-			<FormattedMessage id="linkLogin" />
-			<IconButton src={icUser}/>
-		</ButtonLogin>
+					<ButtonLogin onClick={() => menuStatus()} href="/#/login">
+						<FormattedMessage id="linkLogin" />
+						<IconButton src={icUser}/>
+					</ButtonLogin>
 
-		<Link href="/#/about">
-			<FormattedMessage id="linkAbout" />
-		</Link>
+					<Link onClick={() => menuStatus()} href="/#/about">
+						<FormattedMessage id="linkAbout" />
+					</Link>
 
-		<Link href="/#/contact">
-			<FormattedMessage id="linkContact" />
-		</Link>
+					<Link onClick={() => menuStatus()} href="/#/contact">
+						<FormattedMessage id="linkContact" />
+					</Link>
 
-		<Bottom>
-			<Link href="/#/privacy-policy">
-				<FormattedMessage id="linkPrivacyPolice" />
-			</Link>
-		</Bottom>
-	</Container>
+					<Bottom>
+						<Link onClick={() => menuStatus()} href="/#/privacy-policy">
+							<FormattedMessage id="linkPrivacyPolice" />
+						</Link>
+					</Bottom>
+				</Container>
+			) : <div></div>}
+		</CSSTransition>
+	</SwitchTransition>
+	
 );
 
-export default SideMenu;
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(actions, dispatch)
+
+const mapStateToProps = state => ({
+	login: state.login,
+	menu: state.topbar.menu
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SideMenu)
+

@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
 import login from './login';
-import languages from './translation';
+import topbar from './topbar';
 
 export default combineReducers({
     login,
-    languages
+    topbar
 });

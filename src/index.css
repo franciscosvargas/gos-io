@@ -10,7 +10,6 @@
 
 html {
   height: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -19,16 +18,14 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 50px;
-  overflow: hidden;
 }
+
 @media (max-width: 800px) {
 	body {
 		padding-left: 30px;
   		padding-right: 30px;
 	}
 }
-
-
 
 textarea {
     font-family: 'Nunito Sans', sans-serif;
@@ -80,7 +77,34 @@ textarea ::placeholder,
 	width: 194px;
 }
 
+.my-node-enter {
+	opacity: 0;
+}
 
+.my-node-enter-active {
+	opacity: 1;
+	transition: opacity 300ms;
+}
+
+.my-node-exit {
+	opacity: 1;
+}
+  
+.my-node-exit-active {
+	opacity: 0;
+	transition: opacity 300ms;
+}
+
+.icon-topbar {
+	display: none;
+}
+
+@media (max-width: 650px) {
+	.icon-topbar {
+		display: flex;
+	}
+
+}
 
 @media (max-width: 570px) {
 	textarea {

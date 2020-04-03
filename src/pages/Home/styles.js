@@ -18,5 +18,9 @@ export const ProductsBox = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 
+	@media (max-width: 650px) {
+		margin-bottom: 50px;
+	}
+
 	
 `

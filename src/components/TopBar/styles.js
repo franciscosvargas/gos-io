@@ -16,17 +16,16 @@ export const TabRightBox = styled.div`
     margin-left: auto;
     height: 100%;
 	justify-content: center;
-
-	@media (max-width: 650px) {
-		display: none;
-	}
-
 `
 
 export const Link = styled.a`
     color: #B3B4B4;
     font-size: 14px;
-    margin-left: 30px;
+	margin-left: 30px;
+
+	@media (max-width: 650px) {
+		display: none;
+	}
 `
 
 export const ButtonLogin = styled.a`
@@ -34,7 +33,11 @@ export const ButtonLogin = styled.a`
     font-size: 14px;
     margin-left: 30px;
     display: flex;
-    align-items: center;
+	align-items: center;
+	
+	@media (max-width: 650px) {
+		display: none;
+	}
 `
 
 export const Icon = styled.img`

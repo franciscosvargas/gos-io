@@ -1,15 +1,23 @@
 import React from 'react'
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+
 import { FormattedMessage } from 'react-intl'
 
 import { Container, Logo, TabRightBox, Link, ButtonLogin, Icon } from './styles.js'
+import * as actions from '../../store/actions/topbar';
 
 import logo from '../../assets/logo.png'
 import icUser from '../../assets/ic_user.png'
+import icMenu from '../../assets/ic_menu.svg'
 
-export default function TopBar() {
+function TopBar({menuStatus}) {
 	return (
 		<Container>
-			<Logo src={logo} />
+			<a href="/#/">
+				<Logo src={logo}  />
+			</a>
+			
 			<TabRightBox>
 				<Link href="/#/about">
 					<FormattedMessage id="linkAbout" />
@@ -21,8 +29,21 @@ export default function TopBar() {
 					<Icon src={icUser}/>
 					<FormattedMessage id="linkLogin" />
 				</ButtonLogin>
+
+				
 			</TabRightBox>
+
+			<Icon className="icon-topbar" onClick={() => menuStatus()}src={icMenu}/>
 			
 		</Container>
 	);
 }
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(actions, dispatch)
+
+const mapStateToProps = state => ({
+	login: state.login
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(TopBar)

@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import { FormattedMessage, injectIntl } from 'react-intl'
 
 import { Container, Title, ProductsBox } from './styles'
@@ -12,7 +15,8 @@ import icStore from '../../assets/ic_store.svg'
 import icIOT from '../../assets/ic_iot.svg'
 import icAI from '../../assets/ic_ai.svg'
 
-const Home = injectIntl(({intl}) => {
+
+const Home = injectIntl(({intl, menu}) => {
 
 	const descriptions = {
 		marketplace: intl.formatMessage({id: 'marketplaceDescription'}),
@@ -22,7 +26,9 @@ const Home = injectIntl(({intl}) => {
 
 	return (
 		<Container>
-			<SideMenu/>
+
+			<SideMenu />
+
 			<TopBar/>
 			<Title> 
 				<FormattedMessage id="homeTitle1"/>
@@ -39,5 +45,8 @@ const Home = injectIntl(({intl}) => {
    )
 })
 
+const mapStateToProps = state => ({
+	menu: state.topbar.menu
+});
 
-export default Home;
+export default connect(mapStateToProps)(Home)

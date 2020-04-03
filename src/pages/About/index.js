@@ -4,6 +4,7 @@ import { injectIntl } from 'react-intl'
 
 import Topbar from '../../components/TopBar'
 import Footer from '../../components/Footer'
+import SideMenu from "../../components/SideMenu"
 
 import { Container, Paragraph, TextContainer } from './styles'
 
@@ -19,6 +20,7 @@ const About =  injectIntl(({intl}) => {
 		<Container>
 			<Topbar/>
 
+			<SideMenu />
 			<TextContainer>
 				{ company.map((text, index) => (
 					<Paragraph key={index}> {text} </Paragraph>
