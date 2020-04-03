@@ -17,8 +17,7 @@ export const Container = styled.input`
     :-ms-input-placeholder {
      color: #B3B4B4;
 	}
-	
-	
+
 	@media (max-width: 1250px) {
 		width: 100% !important;
 		flex-grow: 1 !important;

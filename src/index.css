@@ -100,6 +100,24 @@ textarea ::placeholder,
 	display: none;
 }
 
+input:focus {
+	color: #21AFE9 !important;
+	border-bottom: 1px solid #21AFE9 !important;
+}
+
+input:focus::placeholder, textarea:focus::placeholder{
+	color: #21AFE9 !important;
+}
+
+textarea:focus {
+	color: #21AFE9 !important;
+	border: 1px solid #21AFE9 !important;
+}
+
+a:hover {
+	color: #21AFE9 !important;
+}
+
 @media (max-width: 650px) {
 	.icon-topbar {
 		display: flex;
