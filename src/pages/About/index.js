@@ -10,26 +10,26 @@ import { Container, Paragraph, TextContainer } from './styles'
 
 import getTexts from '../../translation/about/utils'
 
+const About =  injectIntl(({intl, match}) => {
 
-const About =  injectIntl(({intl}) => {
+	const { about } = match.params
+	const texts = getTexts(intl.locale)
+	const text = texts[about]
 
-
-	const { company } = getTexts(intl.locale)
-	
 	return (
 		<Container>
-			<Topbar/>
 
+			<Topbar/>
 			<SideMenu />
+
 			<TextContainer>
-				{ company.map((text, index) => (
+				{ text.map((text, index) => (
 					<Paragraph key={index}> {text} </Paragraph>
 				))}
 			</TextContainer>
 
-			
-
 			<Footer/>
+			
 		</Container>
 	)
 

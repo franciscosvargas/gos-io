@@ -8,7 +8,7 @@ import { Container, Icon, ButtonLogin, IconButton, Link, Bottom } from './styles
 import * as actions from '../../store/actions/topbar';
 
 import Arrow from '../../assets/ic_arrow.svg'
-import icUser from '../../assets/ic_user.png'
+import icUser from '../../assets/ic_user.svg'
 import TopBar from '../TopBar';
 
 
@@ -27,7 +27,7 @@ const SideMenu = ({menuStatus, menu}) => (
 						<IconButton src={icUser}/>
 					</ButtonLogin>
 
-					<Link onClick={() => menuStatus()} href="/#/about">
+					<Link onClick={() => menuStatus()} href="/#/about/company">
 						<FormattedMessage id="linkAbout" />
 					</Link>
 

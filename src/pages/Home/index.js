@@ -36,9 +36,9 @@ const Home = injectIntl(({intl, menu}) => {
 				<FormattedMessage id="homeTitle2"/>
 			</Title>
 			<ProductsBox>
-				<Product icon={icStore} name="MarketPlace" description={descriptions.marketplace}/>
-				<Product icon={icIOT} name="IoT Automation" description={descriptions.automation}/>
-				<Product icon={icAI} name="AI" description={descriptions.ai} />
+				<Product href="/#/about/marketplace" icon={icStore} name="MarketPlace" description={descriptions.marketplace}/>
+				<Product href="/#/about/automation" icon={icIOT} name="IoT Automation" description={descriptions.automation}/>
+				<Product href="/#/about/ai" icon={icAI} name="AI" description={descriptions.ai} />
 			</ProductsBox>
 			<Footer/>
 		</Container>

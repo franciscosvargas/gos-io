@@ -5,5 +5,21 @@
 		"O sigilo sobre o nome e marca dos nossos clientes são garantidos sob pena contratual, todos os colaboradores que trabalham diretamente em alguma solução em campo também assinam um forte termo de sigilo e compliance. Tudo isso para garantir que os serviços e produtos suportados pela GOS-IO sejam totalmente transparentes aos clientes finais e colaboradores da empresa contratante.",
 		"Nossa missão é ser a companhia que melhor entende e atende as necessidades técnicas, produtos, serviços, e sistemas tecnológicos a fim de aumentar o lucro de empresas de pequeno, médio e grande porte, priorizando as cláusulas do contratante",
 		"Nossa visão é ser uma referência em suporte e desenvolvimento."
+	],
+	"marketplace": [
+		"GOS-IO MarketPlace é uma divisão da empresa focada em democratizar o suporte ao comércio eletrônico.",
+		"Nossa equipe tem vasta experiência no desenvolvimento de sistemas complexos de comércio eletrônico para grandes empresas. Mas agora a novidade é que devido a novas parcerias, pequenos e micro empreendedores também podem ter acesso a essa tecnologia a um preço compatível com a sua realidade econômica.",
+		"Parcerias com a Google e PagSeguro viabilizaram um novo modelo de negócio onde consultores da GOS fazem visitas a micro, pequenas e médias empresas e empreendedores e identificam formas de suporte eletrônico a suas necessidades para aumento de vendas e exposição de marca.",
+		"O sistema MarketPlace propõe o desenvolvimento de um aplicativo android para smartphones e um site totalmente customizado com a assinatura e características da empresa em questão, disponibilizando diferentes formas de pagamentos aos seus clientes. Esse serviço é disponibilizado imediatamente após a compra do sistema. Esse sistema garante a competitividade entre pequenos e grandes empresários, onde a criatividade de cada um em expor seus produtos e serviços que vão ditar quem serão os novos líderes de vendas, e não mais o poder econômico de cada um."
+	],
+	"automation": [
+		"GOS-IO IoT Automation, é uma divisão da empresa focada em automação e internet das coisas. IoT um conceito que se refere à interconexão digital de objetos cotidianos com a internet",
+		"A idéia é prover via internet uma rede de objetos físicos (veículos, prédios, equipamentos e outros dotados de alguma tecnologia embarcada, sensores e conexão com a rede) capaz de reunir e de transmitir dados a um outro sistema. É uma extensão da internet atual que possibilita que objetos do dia-a-dia, quaisquer que sejam mas que tenham capacidade computacional e de comunicação, se conectem à Internet. Essa conexão possibilita, em primeiro lugar, controlar remotamente os objetos e, em segundo lugar, que os próprios objetos sejam usados como provedores de serviço. Essas novas capacidades dos objetos comuns abrem caminho a inúmeras possibilidades, no mundo agrícola, comercial e industrial. ",
+		"Promovemos a automação de processos de controle pelo qual os mecanismos verificam seu próprio funcionamento, efetuando medições e introduzindo correções, sem a necessidade da interferência humana. Em seu uso moderno, essa automação pode ser definida como uma tecnologia que utiliza comandos programados para operar um dado processo, combinados com retroação de informação para determinar que os comandos sejam executados corretamente, frequentemente pode ser utilizada em processos antes operados apenas por pessoas. Aplicamos técnicas computadorizadas e mecânicas para diminuir o uso de mão-de-obra humana em qualquer processo."
+	],
+	"ai": [
+		"GOS-IO AI é uma divisão da empresa focada em inteligência artificial. ",
+		"Uma das grandes vertentes da ciência da computação que se propõe a elaborar dispositivos que simulem a capacidade humana de raciocinar, perceber, tomar decisões e resolver problemas de assertividade flutuante.",
+		"Nossas soluções englobam aplicar regras lógicas a um conjunto de dados disponíveis para chegar a uma conclusão, aprendizagem de máquina onde os erros e acertos são computados e retroalimentados de forma que no futuro o sistema agirá de maneira mais eficaz, reconhecimento de padrões visuais, sensoriais, funcionais, etc, e de inferência ou capacidade de conseguir aplicar o raciocínio nas situações do cotidiano."
 	]
 }

@@ -8,7 +8,7 @@ import { Container, Logo, TabRightBox, Link, ButtonLogin, Icon } from './styles.
 import * as actions from '../../store/actions/topbar';
 
 import logo from '../../assets/logo.png'
-import icUser from '../../assets/ic_user.png'
+import icUser from '../../assets/ic_user.svg'
 import icMenu from '../../assets/ic_menu.svg'
 
 function TopBar({menuStatus}) {
@@ -19,7 +19,7 @@ function TopBar({menuStatus}) {
 			</a>
 			
 			<TabRightBox>
-				<Link href="/#/about">
+				<Link href="/#/about/company">
 					<FormattedMessage id="linkAbout" />
 				</Link>
 				<Link href="/#/contact">
