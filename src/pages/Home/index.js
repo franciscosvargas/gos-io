@@ -28,23 +28,21 @@ const Home = injectIntl(({intl, menu}) => {
 		<Container>
 
 			<SideMenu />
-
 			<TopBar/>
+
 			<Wrapper>
-			<Title> 
-				<FormattedMessage id="homeTitle1"/>
-				{<br/>} 
-				<FormattedMessage id="homeTitle2"/>
+				<Title> 
+					<FormattedMessage id="homeTitle1"/>
+					{<br/>} 
+					<FormattedMessage id="homeTitle2"/>
+				</Title>
 				
-			</Title>
-					<ProductsBox>
-				<Product href="/#/about/marketplace" icon={icStore} name="MarketPlace" description={descriptions.marketplace}/>
-				<Product href="/#/about/automation" icon={icIOT} name="IoT Automation" description={descriptions.automation}/>
-				<Product href="/#/about/ai" icon={icAI} name="AI" description={descriptions.ai} />
-			</ProductsBox>
-				</Wrapper>
-			
-			
+				<ProductsBox>
+					<Product href="/#/about/marketplace" icon={icStore} name="MarketPlace" description={descriptions.marketplace}/>
+					<Product href="/#/about/automation" icon={icIOT} name="IoT Automation" description={descriptions.automation}/>
+					<Product href="/#/about/ai" icon={icAI} name="AI" description={descriptions.ai} />
+				</ProductsBox>
+			</Wrapper>
 		
 			<Footer/>
 		</Container>

@@ -57,6 +57,10 @@ export const IconButton = styled.a`
     font-size: 16px;
 	border: 1px solid #21AFE9;
 	display: flex;
+
+	:hover {
+		opacity: 0.7;
+	}
 	
 	@media (max-width: 570px) {
 		margin-top: 10px;

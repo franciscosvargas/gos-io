@@ -26,6 +26,9 @@ export const Link = styled.a`
     display: flex;
     align-items: center;
 
+	:hover {
+		opacity: 0.7;
+	}
 
 	@media (max-width: 650px) {
 		display: none;
@@ -41,6 +44,10 @@ export const ButtonLogin = styled.a`
 	
 	@media (max-width: 650px) {
 		display: none;
+	}
+
+	:hover {
+		opacity: 0.7;
 	}
 `
 
