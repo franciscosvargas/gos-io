@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	width: 100%;
+	height:980px;
+	justify-content:space-between;
+`
+export const Wrapper = styled.div`
+	padding:0px 80px;
 `
 
 export const Title = styled.span`

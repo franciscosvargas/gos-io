@@ -41,7 +41,7 @@ const SideMenu = ({menuStatus, menu}) => (
 						</Link>
 					</Bottom>
 				</Container>
-			) : <div></div>}
+			) : <div style={{display:'none'}}></div>}
 		</CSSTransition>
 	</SwitchTransition>
 	
