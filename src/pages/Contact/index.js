@@ -30,7 +30,7 @@ const Contact = injectIntl(({intl}) => {
 			<Topbar/>
 			<SideMenu />
 			<Content>
-				<Side>
+				<Side style={{width: '48%'}}>
 					<Title>{texts.title}</Title>
 					<TextInput className="first-input" type="text" placeholder={texts.plholderName} required/>
 					<InputGroup>
@@ -42,7 +42,7 @@ const Contact = injectIntl(({intl}) => {
 					<Button>{texts.buttonSend}</Button>
 				</Side>
 
-				<Side className="rightSide" style={{marginLeft: '100px'}}>
+				<Side >
 					<Title>E-mail</Title>
 					<Span style={{marginTop: 20}}>suporte@gos-io.tech</Span>
 					<IconButton>
@@ -55,7 +55,7 @@ const Contact = injectIntl(({intl}) => {
 					</IconButton>
 
 					<Title style={{marginTop: 50}}>{texts.spanAddress}</Title>
-					<Span className="span-address">Praça Prefeito Antonio Carlos Barbosa - Nº 15 São Pedro da União 37.855.000 {<br/>}00.000.000/0000-00</Span>
+					<Span className="span-address">Praça Prefeito Antonio Carlos Barbosa - Nº 15{<br/>}São Pedro da União 37.855.000 {<br/>}00.000.000/0000-00</Span>
 
 				</Side>
 			</Content>

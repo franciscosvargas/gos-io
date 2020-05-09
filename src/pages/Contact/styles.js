@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    height: 100%;   
-    display: flex;
-    flex-direction: column;
-`;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height:100vh;
+	justify-content:space-between;
+`
 
 export const Title = styled.span`
     color: #DBDEDF;
@@ -15,8 +17,9 @@ export const Title = styled.span`
 
 export const Content = styled.div`
     display: flex;
-	margin-top: 130px;
-	flex-direction: row;
+    flex-direction: row;
+    justify-content:space-between;
+    padding:0px 80px;
 
 	@media (max-width: 570px) {
 		margin-top: 0px;
@@ -35,11 +38,8 @@ export const InputGroup = styled.div`
 `
 
 export const Side = styled.div`
-    width: 48%;
     display: flex;
 	flex-direction: column;
-	flex-grow: 1;
-
 
 	@media (max-width: 570px) {
 		margin-top: 50px;
@@ -71,7 +71,8 @@ export const Button = styled.button`
 
 export const Span = styled.span`
     color: #DBDEDF;
-	font-size: 18px;
+    font-size: 18px;
+
 	
 `
 

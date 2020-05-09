@@ -6,7 +6,7 @@ import Topbar from '../../components/TopBar'
 import Footer from '../../components/Footer'
 import SideMenu from "../../components/SideMenu"
 
-import { Container, Paragraph, TextContainer } from './styles'
+import { Container, Paragraph, TextContainer,Wrapper } from './styles'
 
 import getTexts from '../../translation/about/utils'
 
@@ -21,12 +21,14 @@ const About =  injectIntl(({intl, match}) => {
 
 			<Topbar/>
 			<SideMenu />
-
-			<TextContainer>
+			<Wrapper>
+				<TextContainer>
 				{ text.map((text, index) => (
 					<Paragraph key={index}> {text} </Paragraph>
 				))}
 			</TextContainer>
+			</Wrapper>
+			
 
 			<Footer/>
 			

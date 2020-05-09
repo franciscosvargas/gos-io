@@ -1,16 +1,20 @@
 import styled from "styled-components";
+import { Form } from '@unform/web';
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height:100vh;
+	justify-content:space-between;
 `
-export const InputGroup = styled.div`
+export const Wrapper = styled.div`
+	
+`
+export const InputGroup = styled(Form)`
     width: 550px;
 	margin-left: auto;
 	margin-right: auto;
-    margin-top: 100px;
     display: flex;
 	flex-wrap: wrap;
 

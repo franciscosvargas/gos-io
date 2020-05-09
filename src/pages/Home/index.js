@@ -4,7 +4,7 @@ import { bindActionCreators } from "redux";
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import { FormattedMessage, injectIntl } from 'react-intl'
 
-import { Container, Title, ProductsBox } from './styles'
+import { Container, Title, ProductsBox ,Wrapper} from './styles'
 
 import TopBar from "../../components/TopBar"
 import Product from "../../components/HomeInfoBox"
@@ -30,16 +30,22 @@ const Home = injectIntl(({intl, menu}) => {
 			<SideMenu />
 
 			<TopBar/>
+			<Wrapper>
 			<Title> 
 				<FormattedMessage id="homeTitle1"/>
 				{<br/>} 
 				<FormattedMessage id="homeTitle2"/>
+				
 			</Title>
-			<ProductsBox>
+					<ProductsBox>
 				<Product href="/#/about/marketplace" icon={icStore} name="MarketPlace" description={descriptions.marketplace}/>
 				<Product href="/#/about/automation" icon={icIOT} name="IoT Automation" description={descriptions.automation}/>
 				<Product href="/#/about/ai" icon={icAI} name="AI" description={descriptions.ai} />
 			</ProductsBox>
+				</Wrapper>
+			
+			
+		
 			<Footer/>
 		</Container>
    )

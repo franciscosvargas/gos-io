@@ -1,21 +1,21 @@
 import styled from 'styled-components';
-
-export const Container = styled.input`
+import InputMask from 'react-input-mask';
+export const Container = styled(InputMask)`
     padding-bottom: 5px;
-    border-bottom: 1px solid #B3B4B4 !important;
+    border-bottom: 1px solid #767B7D !important;
     background: none;
     border: none;
-	color: #B3B4B4;
+	color: #767B7D;
 	display:flex;
 	flex-direction: column;
 	font-size: 16px;
 	min-width: 240px !important;
     ::placeholder,
     ::-webkit-input-placeholder {
-        color: #B3B4B4;
+        color: #767B7D;
     }
     :-ms-input-placeholder {
-     color: #B3B4B4;
+     color: #767B7D;
 	}
 
 	@media (max-width: 1250px) {
