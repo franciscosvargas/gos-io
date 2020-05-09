@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-
-export const Container = styled.input`
+import InputMask from 'react-input-mask';
+export const Container = styled(InputMask)`
     padding-bottom: 5px;
     border-bottom: 1px solid #767B7D !important;
     background: none;

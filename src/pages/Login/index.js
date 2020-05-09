@@ -27,7 +27,7 @@ const Login = injectIntl(({intl}) => {
 			<SideMenu />
 
 			<InputGroup>
-				<TextInput className="inputLogin" type="text" placeholder="CPF"/>
+				<TextInput className="inputLogin" mask="999.999.999-99" type="text" placeholder="CPF"/>
 				<TextInput className="inputLogin" type="text" placeholder={texts.plholderCountry}/>
 				<TextInput className="inputLogin" type="text" placeholder={texts.plholderCity}/>
 				<TextInput className="inputLogin" type="text" placeholder={texts.plholderCompany}/>
