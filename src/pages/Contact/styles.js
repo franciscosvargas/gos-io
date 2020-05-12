@@ -19,7 +19,7 @@ export const Content = styled.div`
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    padding:0px 80px;
+    padding:0px 100px;
 
 	@media (max-width: 570px) {
 		margin-top: 0px;

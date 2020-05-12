@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     align-items: center;
-    padding:80px 80px 10px 80px;
+    padding:50px 100px 10px 100px;
 
 `
 
@@ -21,7 +21,7 @@ export const TabRightBox = styled.div`
 
 export const Link = styled.a`
     color: #B3B4B4;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 30px;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@ export const Link = styled.a`
 
 export const ButtonLogin = styled.a`
     color: #21AFE9;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 30px;
     display: flex;
 	align-items: center;
@@ -46,4 +46,6 @@ export const ButtonLogin = styled.a`
 
 export const Icon = styled.img`
     margin-right: 5px;
+    width:18px;
+    height:18px;
 `

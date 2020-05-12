@@ -8,14 +8,16 @@ export const Container = styled.div`
 	justify-content:space-between;
 `
 export const Wrapper = styled.div`
-	padding:0px 80px;
+	padding:0px 100px;
 `
 
 export const Title = styled.span`
     color: #DBDEDF;
-    font-size: 25px;
+    font-size: 30px;
+	line-height:40px;
     font-weight: 600;
     margin-top: 100px;
+	letter-spacing: 0.6px;
 `
 
 export const ProductsBox = styled.div`

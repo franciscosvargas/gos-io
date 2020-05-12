@@ -8,7 +8,7 @@ export const Container = styled.div`
 	justify-content:space-between;
 `
 export const Wrapper = styled.div`
-	padding:0px 80px;
+	padding:0px 100px;
 `
 export const Paragraph = styled.span`
 	color: #DBDEDF;
