@@ -4,12 +4,21 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     padding:50px 100px 10px 100px;
+    @media (max-width: 650px) {
+        padding:30px 30px 0px 30px;
+	}
 
 `
 
 export const Logo = styled.img`
     width: 216px;
     height: 72px;
+
+	@media (max-width: 650px) {
+    width: 152px;
+    height: 50px;
+	}
+
 `
 
 export const TabRightBox = styled.div`

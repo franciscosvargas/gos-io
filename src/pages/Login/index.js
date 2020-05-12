@@ -1,7 +1,7 @@
 import React from 'react';
 import { injectIntl } from 'react-intl'
 
-import { Container, InputGroup, Button, IconButton } from './styles';
+import { Container, InputGroup, Button, IconButton, Wrapper } from './styles';
 
 import Topbar from '../../components/TopBar';
 import TextInput from '../../components/TextInput';
@@ -25,8 +25,8 @@ const Login = injectIntl(({intl}) => {
 			<Topbar />
 
 			<SideMenu />
-
-			<InputGroup>
+			<Wrapper>
+				<InputGroup>
 				<TextInput className="inputLogin" mask="999.999.999-99" type="text" placeholder="CPF"/>
 				<TextInput className="inputLogin" type="text" placeholder={texts.plholderCountry}/>
 				<TextInput className="inputLogin" type="text" placeholder={texts.plholderCity}/>
@@ -40,6 +40,8 @@ const Login = injectIntl(({intl}) => {
 
 				<IconButton>{texts.buttonDownloadApp}</IconButton>
 			</InputGroup>
+			</Wrapper>
+			
 
 			<Footer/>
       </Container>
