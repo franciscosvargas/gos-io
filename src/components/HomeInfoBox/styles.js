@@ -8,12 +8,15 @@ export const Container = styled.div`
 	margin-right: 40px;
 	padding: 39px 20px 20px 20px;
 	flex-shrink: 0; 
-	margin-top: 30px;
     display:flex;
     flex-direction:column;
     justify-content:space-between; 
     
-
+    @media (max-width: 650px) {
+    margin-bottom:20px;
+    width: 260px;
+    height:263px;
+	}
 	@media (max-width: 1160px) {
 		flex-grow: 1;
 		
