@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
 	padding:0px 100px;
 	@media (max-width: 650px) {
-        padding:100px 30px 0px 30px;
+		padding:100px 30px 0px 30px;
 	}
 `
 
@@ -34,6 +34,7 @@ export const ProductsBox = styled.div`
 
 	@media (max-width: 650px) {
 		margin-bottom: 50px;
+		justify-content:center;
 	}
 
 	
