@@ -10,8 +10,9 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
 	padding:0px 100px;
 	@media (max-width: 650px) {
-		padding:100px 30px 0px 30px;
+		padding:100px 30px 50px 30px;
 	}
+	
 `
 
 export const Title = styled.span`
@@ -33,7 +34,6 @@ export const ProductsBox = styled.div`
 	flex-wrap: wrap;
 
 	@media (max-width: 650px) {
-		margin-bottom: 50px;
 		justify-content:center;
 	}
 

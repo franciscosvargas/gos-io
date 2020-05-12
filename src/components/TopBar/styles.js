@@ -55,6 +55,6 @@ export const ButtonLogin = styled.a`
 
 export const Icon = styled.img`
     margin-right: 5px;
-    width:18px;
-    height:18px;
+    width:30px;
+    height:20px;
 `

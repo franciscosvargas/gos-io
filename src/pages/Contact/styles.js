@@ -21,10 +21,11 @@ export const Content = styled.div`
     justify-content:space-between;
     padding:0px 100px;
 
-	@media (max-width: 570px) {
-		margin-top: 0px;
+
+    @media (max-width: 650px) {
+        padding:0px 30px 50px 30px;
+        margin-top: 0px;
 		flex-wrap: wrap !important;
-		
 	}
 `
 
@@ -42,7 +43,7 @@ export const Side = styled.div`
 	flex-direction: column;
 
 	@media (max-width: 570px) {
-		margin-top: 50px;
+		margin-top: 100px;
 		flex-grow: 1;
 		width: 100%;
 		margin-left: 0 !important;

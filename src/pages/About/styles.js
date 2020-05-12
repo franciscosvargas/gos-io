@@ -9,15 +9,17 @@ export const Container = styled.div`
 `
 export const Wrapper = styled.div`
 	padding:0px 100px;
+	@media (max-width: 650px) {
+		padding:100px 30px 50px 30px;
+	}
 `
 export const Paragraph = styled.span`
 	color: #DBDEDF;
 	font-size: 18px;
-	margin-top: 20px;
+	margin-bottom: 20px;
 `
 
 export const TextContainer = styled.div`
-	margin-top:40px;
 	display: flex;
 	flex-direction: column;
 `
