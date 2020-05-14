@@ -9,26 +9,24 @@ export const Container = styled.div`
 	justify-content:space-between;
 `
 export const Wrapper = styled.div`
-	
+	display: flex;
+	justify-content:center;
+	@media (max-width: 650px) {
+        padding:0px 30px 50px 30px;
+        margin-top: 0px;
+		flex-wrap: wrap !important;
+    }
+
 `
 export const InputGroup = styled(Form)`
     width: 550px;
-	margin-left: auto;
-	margin-right: auto;
     display: flex;
 	flex-wrap: wrap;
+	@media (max-width: 650px) {
+        width:100vw;
+    }
 
-	@media (max-width: 1250px) {
-		width: 700px;
-	}
-	
-
-	@media (max-width: 570px) {
-		width: 100% !important;
-		margin-left: 0 !important;
-    	margin-right: 0 !important;
-		
-	}
+    
 `
 
 export const Button = styled.button`

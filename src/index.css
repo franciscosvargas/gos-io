@@ -9,7 +9,8 @@
 }
 
 html {
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
@@ -18,12 +19,6 @@ body {
 
 }
 
-@media (max-width: 800px) {
-	body {
-		padding-left: 30px;
-  		padding-right: 30px;
-	}
-}
 textarea {
     font-family: 'Nunito Sans', sans-serif;
     padding: 10px;
@@ -115,9 +110,6 @@ textarea:focus {
 		display: flex;
 	}
 
-	body {
-		padding-bottom: 50px;
-	}
 
 }
 
