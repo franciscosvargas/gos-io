@@ -10,7 +10,9 @@ import * as actions from '../../store/actions/topbar';
 import Arrow from '../../assets/ic_arrow.svg'
 import icUser from '../../assets/ic_user.svg'
 import TopBar from '../TopBar';
-
+import icGlobal from '../../assets/ic_global.svg'
+import SelectIdioma from '../SelectIdioma'
+import { findByLabelText } from '@testing-library/react';
 
 const SideMenu = ({menuStatus, menu}) => (
 
@@ -36,6 +38,12 @@ const SideMenu = ({menuStatus, menu}) => (
 					</Link>
 
 					<Bottom>
+						<div style={{marginRight: 30, display:'flex' }}>
+							<SelectIdioma isMenu={true}></SelectIdioma>
+							<IconButton src={icGlobal}/>
+						</div>
+						
+					
 						<Link onClick={() => menuStatus()} href="/#/privacy-policy">
 							<FormattedMessage id="linkPrivacyPolice" />
 						</Link>

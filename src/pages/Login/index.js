@@ -22,9 +22,10 @@ const Login = injectIntl(({intl}) => {
 
 	return(
 		<Container>
+			<SideMenu />
 			<Topbar />
 
-			<SideMenu />
+			
 			<Wrapper>
 				<InputGroup>
 				<TextInput className="inputLogin" mask="999.999.999-99" type="text" placeholder="CPF"/>
@@ -33,15 +34,12 @@ const Login = injectIntl(({intl}) => {
 				<TextInput className="inputLogin" type="text" placeholder={texts.plholderCompany}/>
 				<TextInput className="inputLogin" type="text" placeholder={texts.plholderState}/>
 				<TextInput className="inputLogin" type="text" placeholder={texts.plholderPassword}/>
-
-
-				
 				<Button>{texts.buttonAccess}</Button>
 
 				<IconButton>{texts.buttonDownloadApp}</IconButton>
 			</InputGroup>
 			</Wrapper>
-			
+			 
 
 			<Footer/>
       </Container>

@@ -27,5 +27,6 @@
 	"buttonSend":"ENVIAR",
 	"buttonWhatsapp":"Contacta con Whatsapp",
 	"buttonAccess":"ACCESO",
-	"buttonDownloadApp":"DESCARGAR APLICACIÓN"
+	"buttonDownloadApp":"DESCARGAR APLICACIÓN",
+	"language":"Idioma"
 }

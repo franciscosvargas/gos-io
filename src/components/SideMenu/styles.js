@@ -29,7 +29,7 @@ export const ButtonLogin = styled.a`
 `
 
 export const IconButton = styled.img`
-    margin-left: 5px
+    margin-left: 5px;
 `
 
 export const Link = styled.a`
@@ -40,6 +40,10 @@ export const Link = styled.a`
 `
 
 export const Bottom = styled.div`
+	display:flex;
 	margin-top: auto;
 	margin-bottom: 100px;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:flex-end;
 `
