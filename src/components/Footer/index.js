@@ -1,10 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl'
-
-import { Container, Copyright, TabRightBox, Link } from './styles';
-
-//import icGlobal from '../../assets/ic_global.svg';
-
+import { Container, Copyright, TabRightBox, Link} from './styles';
+import SelectIdioma from '../SelectIdioma'
 const Footer = () => {
     return (
         <Container>
@@ -13,6 +10,8 @@ const Footer = () => {
 			</Copyright>
 
             <TabRightBox>
+                <SelectIdioma ></SelectIdioma>
+                
                 <Link>
 					<FormattedMessage id="linkPrivacyPolice" />
 				</Link>
@@ -20,5 +19,6 @@ const Footer = () => {
     </Container>
     )
 };
+
 
 export default Footer;

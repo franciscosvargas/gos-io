@@ -20,7 +20,8 @@ export const Container = styled.div`
     
 	}
 	@media (max-width: 1160px) {
-		flex-grow: 1;
+        flex-grow: 1;
+        margin-bottom:50px;
 		
 	}
 

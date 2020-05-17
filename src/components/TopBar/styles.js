@@ -35,10 +35,9 @@ export const Link = styled.a`
     display: flex;
     align-items: center;
 
-	:hover {
-		opacity: 0.7;
-	}
-
+    :hover{
+	opacity: 70%;
+    }
 	@media (max-width: 650px) {
 		display: none;
 	}
@@ -50,7 +49,9 @@ export const ButtonLogin = styled.a`
     margin-left: 30px;
     display: flex;
 	align-items: center;
-	
+	:hover{
+	opacity: 70%;
+    }
 	@media (max-width: 650px) {
 		display: none;
 	}

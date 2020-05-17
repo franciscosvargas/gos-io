@@ -26,10 +26,14 @@ export const ButtonLogin = styled.a`
 	align-items: center;
 	margin-right: 30px !important;
 	margin-top: 100px;
+	@media (max-width: 650px) {
+		font-size: 16px;
+    
+	}
 `
 
 export const IconButton = styled.img`
-    margin-left: 5px
+    margin-left: 5px;
 `
 
 export const Link = styled.a`
@@ -37,9 +41,17 @@ export const Link = styled.a`
     font-size: 14px;
 	margin-right: 30px !important;
 	margin-top: 20px;
+	@media (max-width: 650px) {
+		font-size: 16px;
+    
+	}
 `
 
 export const Bottom = styled.div`
+	display:flex;
 	margin-top: auto;
 	margin-bottom: 100px;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:flex-end;
 `
