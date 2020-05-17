@@ -26,7 +26,8 @@ export const LanguagesList = styled.ul`
     ${(props) =>
     props.isMenu &&
     css`
-	margin-right: 30px;
+    
+    left:-30px;
     `}
     
 `

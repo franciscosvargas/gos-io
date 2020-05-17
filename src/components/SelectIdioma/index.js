@@ -14,7 +14,7 @@ const SelectIdioma = ({changeLanguage, language, isMenu}) => {
     
     return (
         <LanguagesContainer>
-        {menu?(<LanguagesList>
+        {menu?(<LanguagesList isMenu={isMenu}>
         <Language isMenu={isMenu} onClick={() => { muda("en")}}>English</Language>
         <Language isMenu={isMenu} onClick={() => { muda("es")}}>Español</Language>
         <Language isMenu={isMenu} onClick={() => { muda("pt-BR")}}>Português</Language>
