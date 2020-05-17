@@ -31,7 +31,7 @@ export const LanguagesList = styled.ul`
     props.isMenu &&
     css`
     
-    left:-30px;
+    left:-40px;
     `}
     
 `
