@@ -7,6 +7,10 @@ export const Link = styled.a`
     color: #B3B4B4;
     font-size: 14px;
     margin-left: 30px;
+    @media (max-width: 650px) {
+		font-size: 16px;
+    
+	}
 `
 
 export const Icon = styled.img`
