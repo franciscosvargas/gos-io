@@ -23,7 +23,7 @@ export const Content = styled.div`
     padding:0px 100px;
 
 
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
         padding:0px 30px 50px 30px;
         margin-top: 0px;
 		flex-wrap: wrap !important;
@@ -44,7 +44,7 @@ export const Side = styled.div`
     display: flex;
 	flex-direction: column;
 
-	@media (max-width: 900px) {
+	@media (max-width: 1000px) {
 		margin-top: 100px;
 		flex-grow: 1;
 		width: 100%;
@@ -67,7 +67,7 @@ export const Button = styled.button`
     margin-top: 42px;
 	font-size: 16px;
 	
-	@media (max-width: 900px) {
+	@media (max-width: 1000px) {
 		width: 98%;
 	}
 `

@@ -39,7 +39,7 @@ export const Button = styled.button`
     
 	font-size: 16px;
 	
-	@media (max-width: 570px) {
+	@media (max-width: 650px) {
 		margin-bottom: 0px;
 		width: 100%;
 		
@@ -56,7 +56,7 @@ export const IconButton = styled.a`
 	border: 1px solid #21AFE9;
 	display: flex;
 	
-	@media (max-width: 570px) {
+	@media (max-width: 650px) {
 		margin-top: 10px;
 		margin-bottom: 0px;
 		width: 100%;
