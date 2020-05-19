@@ -5,6 +5,7 @@ export const Container = styled.div`
 	flex-direction: column;
 	width: 100vw;
 	height:100vh;
+	overflow-x: hidden;
 	justify-content:space-between;
 `
 export const Wrapper = styled.div`

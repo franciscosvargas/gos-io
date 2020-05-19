@@ -5,6 +5,7 @@ export const Container = styled.div`
 	flex-direction: column;
 	width: 100vw;
 	height:100vh;
+    overflow-x: hidden;
 	justify-content:space-between;
 `
 
@@ -22,10 +23,11 @@ export const Content = styled.div`
     padding:0px 100px;
 
 
-    @media (max-width: 650px) {
+    @media (max-width: 900px) {
         padding:0px 30px 50px 30px;
         margin-top: 0px;
 		flex-wrap: wrap !important;
+        align-items:center;
 	}
 `
 
@@ -42,7 +44,7 @@ export const Side = styled.div`
     display: flex;
 	flex-direction: column;
 
-	@media (max-width: 570px) {
+	@media (max-width: 900px) {
 		margin-top: 100px;
 		flex-grow: 1;
 		width: 100%;
@@ -65,7 +67,7 @@ export const Button = styled.button`
     margin-top: 42px;
 	font-size: 16px;
 	
-	@media (max-width: 570px) {
+	@media (max-width: 900px) {
 		width: 98%;
 	}
 `
